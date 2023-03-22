@@ -69,11 +69,152 @@ ol {
 }
 
 /*---------------------------------- Header--------------------------- */
-.header {
+/* .header {
   border-bottom: 1px solid var(--color_cornflower);
+} */
+/* ---------------MOBILE------------------------ .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 428px) {
+  width: 396px;
+}
+@media screen and (min-width: 768px) {
+  width: 736px;
+}
+@media screen and (min-width: 1200px) {
+  width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+    text-decoration: none;
+  }
+  .address {
+    display: none;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 428px) {
+}
+.header-div {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+  padding: 0;
+}
+.mobile-menu-icon {
+  stroke: var(--color_navy-blue-modal);
+}
+.mobile-menu_container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 0px 40px 40px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0;
+  opacity: 0;
+}
+.mobile-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 19px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: var(--color_cornflower);
+  border: none;
+  line-height: 0;
+  padding: 0;
+}
+.close-modal-icon {
+  fill: var(--color_navy-blue);
+  align-items: center;
+  justify-content: center;
+}
+.mobile-address-group {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.mobile-menu-content {
+  margin-bottom: 120px;
+}
+.mobile-menu-content-group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.logo {
+.menu-list {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color_navy-blue-modal);
+}
+.mobile-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.address-link-phone {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--color_iris);
+  letter-spacing: normal;
+}
+.address-link-mail {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #434455;
+}
+.social-div-group {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.social-div-list {
+  display: flex;
+}
+.social-div-list-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color_iris);
+} */
+
+_____________________________________________
+  ___________OTHER__________________________________
+  /* .logo {
   font-family: var(--font_secondary, "Arial", sans-serif);
   font-weight: 800;
   font-size: 18px;
@@ -82,13 +223,12 @@ ol {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color_navy-blue);
-  margin-right: 76px;
-}
-
-.header-logo {
+} */
+ /* margin-right: 76px; */
+/* .header-logo {
   color: var(--color_iris);
-}
-.nav-header {
+} */
+/* .nav-header {
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -107,13 +247,13 @@ ol {
 
 .menu {
   display: flex;
-}
+} */
 
-.menu-item:not(:last-child) {
+/* .menu-item:not(:last-child) {
   margin-right: 40px;
-}
+} */
 
-.menu-list {
+/* .menu-list {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 27px;
@@ -124,9 +264,9 @@ ol {
   text-decoration: none;
   list-style: none;
   transition: color var(--hover-transition);
-}
+} */
 
-.menu-list:hover,
+/* .menu-list:hover,
 .menu-list:focus {
   color: var(--color_ocean);
 }
@@ -147,7 +287,6 @@ ol {
   text-decoration: none;
   font-style: normal;
   transition: color var(--hover-transition);
-  /* because of default for a href="mail/tel: is italic */
 }
 .address-item:not(:last-child) {
   margin-right: 40px;
@@ -158,8 +297,9 @@ ol {
 }
 .menu-item {
   position: relative;
-}
-.line::after {
+} */
+
+/* .line::after {
   content: "";
   position: absolute;
   display: block;
@@ -173,7 +313,7 @@ ol {
 }
 .current::after {
   opacity: 1;
-}
+} */
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -644,7 +784,8 @@ ol {
 
 .social-div-list {
   display: flex;
-  gap: 16px;
+  gap: 56px;
+  justify-content: center;
 }
 
 .social-div-list-item {
