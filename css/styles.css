@@ -256,8 +256,6 @@ margin-bottom: 16px;
 }
 .close-modal-icon {
   fill: var(--color_navy-blue-modal);
-  align-items: center;
-  justify-content:center;
 }
 .mobile-close-btn {
     display: flex;
