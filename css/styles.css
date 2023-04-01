@@ -255,20 +255,23 @@ color: var(--color_navy-blue-modal);
 margin-bottom: 16px;
 }
 .close-modal-icon {
-  display: flex;
   fill: var(--color_navy-blue);
   align-items: center;
   justify-content:center;
 }
 .mobile-close-btn {
+    display: flex;
     position: absolute;
     top: 25px;
-    right: 19px;
-    height: 24px;
-    width: 24px;
+    right: 20px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
     background-color: var(--color_cornflower);
+    background-color: transparent;
     border: none;
+    justify-content: center;
+    align-items: center;
     line-height: 0;
     padding: 0;
 }
