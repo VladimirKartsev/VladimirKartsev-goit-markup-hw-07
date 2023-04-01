@@ -31,8 +31,8 @@
     visibility: hidden;
     pointer-events: none;
     transform: translateX(-100%);
-    transition: transform var(--time-function), opacity var(--time-function),
-      visibility var(--time-function);
+    transition: transform var( --hover-transition), opacity var( --hover-transition),
+      visibility var(--hover-transition);
   }
 
   .mobile-menu {
