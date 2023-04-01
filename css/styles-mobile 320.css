@@ -1,16 +1,11 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .container {
+    position: relative;
     max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .menu {
-    display: none;
-  }
-  .address-list {
-    display: none;
   }
   .mobile-menu {
     position: fixed;
@@ -29,32 +24,23 @@
   .mobile-menu.is-open {
     transform: translateX(0);
   }
-
   .mobile-menu-content {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
   }
   .mobile-menu-content-group {
     gap: 40px;
   }
+  .menu {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
   .line {
     display: none;
   }
-  .hero {
-    padding-top: 112px;
-    padding-bottom: 112px;
-  }
-  .title-hero {
-    font-size: 36px;
-    margin-bottom: 72px;
-  }
+  /* -------MAIN-------------------- */
   .overlay {
-    margin-left: auto;
-    margin-right: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 188px;
-    padding-bottom: 188px;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -62,14 +48,19 @@
       ),
       url(../images/mobile/Dark-bg@min.jpg);
   }
-  .features-svg {
-    display: none;
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .title-hero {
+    font-size: 30px;
+    margin-bottom: 72px;
   }
   .features {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  .features-icon-group {
+  .features-list-icon {
     display: none;
   }
   .features-list-text {
@@ -177,6 +168,7 @@
     padding-top: 96px;
     padding-bottom: 96px;
   }
+
   .social-customers-list {
     display: flex;
     flex-wrap: wrap;
@@ -187,6 +179,7 @@
     justify-content: center;
     margin-top: 72px;
   }
+
   .social-customers-link {
     width: 168px;
     height: 88px;
@@ -204,7 +197,8 @@
   .social-customers-link:is(:hover, :focus) {
     color: var(--color_ocean);
   }
-  /* footer */
+
+  /* -------footer-------- */
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -309,5 +303,20 @@
     gap: 16px;
     color: rgba(255, 255, 255, 1);
     border-color: transparent;
+  }
+  .footer-input::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .footer-input:focus {
+    border-color: var(--color_iris);
+    transition: color var(--hover-transition);
+  }
+  .footer-btn:focus,
+  .footer-btn:hover {
+    background-color: var(--color_ocean_new);
+    transition: color var(--hover-transition);
   }
 }

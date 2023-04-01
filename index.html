@@ -18,8 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-mobile 320.css" />
     <link rel="stylesheet" href="./css/styles-mobile.css" />
+    <link rel="stylesheet" href="./css/styles-tablet.css" />
+    <link rel="stylesheet" href="./css/styles-desctop.css" />
   </head>
   <body>
     <header class="header">
@@ -30,21 +33,17 @@
           >
           <ul class="menu">
             <li class="menu-item">
-              <a class="menu-list-top current line" href="./index.html"
-                >Studio</a
-              >
+              <a class="menu-list current line" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-list-top line" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="menu-list line" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-list-top line" href="./contacts.html">Contacts</a>
+              <a class="menu-list line" href="./contacts.html">Contacts</a>
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open js-open-menu">
           <svg class="mobile-menu-icon" width="32" height="22">
             <use href="images/sprite.svg#icon-hamburger"></use>
           </svg>
@@ -65,8 +64,8 @@
         </address>
       </div>
       <div class="container mobile-menu">
-        <div class="container mobile-menu_container">
-          <button type="button" class="mobile-close-btn">
+        <div class="container mobile-menu_container js-menu-container">
+          <button type="button" class="mobile-close-btn js-close-menu">
             <svg class="close-modal-icon" height="8" width="8">
               <use href="/images/sprite.svg#icon-Close-Modal"></use>
             </svg>
@@ -74,13 +73,17 @@
           <div class="mobile-menu-content">
             <ul class="mobile-menu-content-group">
               <li class="mobile-menu-contant-item">
-                <a class="menu-list current line" href="./index.html">Studio</a>
+                <a class="menu-list-mobile current" href="./index.html"
+                  >Studio</a
+                >
               </li>
               <li class="mobile-menu-contant-item">
-                <a class="menu-list line" href="./portfolio.html">Portfolio</a>
+                <a class="menu-list-mobile" href="./portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li class="mobile-menu-contant-item">
-                <a class="menu-list line" href="./contacts.html">Contacts</a>
+                <a class="menu-list-mobile" href="./contacts.html">Contacts</a>
               </li>
             </ul>
           </div>
@@ -104,7 +107,7 @@
             </address>
           </div>
           <div class="social-div-group">
-            <ul class="social-div-list">
+            <ul class="social-div-list-mobile">
               <li class="social-div-list-item">
                 <a
                   href=""
@@ -160,8 +163,11 @@
     </header>
     <main>
       <section class="hero overlay">
-        <div class="container">
-          <h1 class="title-hero">Effective Solutions for Your Business</h1>
+        <div class="container headline-container">
+          <h1 class="title-hero">
+            Effective Solutions <br />
+            for Your Business
+          </h1>
           <button class="btn-hero" data-modal-open type="button">
             Order Service
           </button>
@@ -170,56 +176,59 @@
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
-          <ul class="list-text">
-            <li class="features-item icon-group">
-              <div class="features-svg">
-                <svg class="features-img" width="64" height="64">
+          <div class="features-list-block">
+            <ul class="features-list-icon container">
+              <li class="features-icon-group">
+                <svg class="antenna" width="64" height="64">
                   <use href="./images/sprite.svg#icon-group"></use>
                 </svg>
-              </div>
-              <h3 class="features-title">Strategy</h3>
-              <p class="features-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="features-item icon-time">
-              <div class="features-svg">
-                <svg class="features-img" width="64" height="64">
+              </li>
+              <li class="features-icon-group">
+                <svg class="clock" width="64" height="64">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
-              </div>
-              <h3 class="features-title">Punctuality</h3>
-              <p class="features-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="features-item icon-comp">
-              <div class="features-svg">
-                <svg class="features-img" width="64" height="64">
+              </li>
+              <li class="features-icon-group">
+                <svg class="vector" width="64" height="64">
                   <use href="./images/sprite.svg#icon-vector"></use>
                 </svg>
-              </div>
-              <h3 class="features-title">Diligence</h3>
-              <p class="features-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="features-item icon-astronaut">
-              <div class="features-svg">
-                <svg class="features-img" width="64" height="64">
+              </li>
+              <li class="features-icon-group">
+                <svg class="astronaut" width="64" height="64">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
-              </div>
-              <h3 class="features-title">Technologies</h3>
-              <p class="features-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
+              </li>
+            </ul>
+            <ul class="features-list-text container">
+              <li class="features-item icon-group">
+                <h3 class="features-title">Strategy</h3>
+                <p class="features-text">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
+              <li class="features-item icon-time">
+                <h3 class="features-title">Punctuality</h3>
+                <p class="features-text">
+                  Bring the key message to the brand's audience for the best price
+                  within the shortest possible time.
+                </p>
+              </li>
+              <li class="features-item icon-comp">
+                <h3 class="features-title">Diligence</h3>
+                <p class="features-text">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
+              <li class="features-item icon-astronaut">
+                <h3 class="features-title">Technologies</h3>
+                <p class="features-text">
+                  Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="target">
@@ -227,31 +236,46 @@
           <h2 class="title-section">What are we doing</h2>
           <ul class="target-img">
             <li class="target-item">
-              <img
-                class="pfoto-img"
-                src="./images/img1.jpg"
-                alt="Desktop photo"
-                class="target-img-block"
-                width="360"
-              />
+              <picture>
+                <source srcset="
+                ./images/desktop/Rectangle1.jpg 1x,
+                ./images/desktop/Rectangle1@2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="
+                ./images/desktop/Rectangle1.webp 1x,
+                ./images/desktop/Rectangle1@2x.webp 2x"
+                media="(min-width:1200px)" type="image/webp">
+                <img class="pfoto-img" src="./images/desktop/Rectangle1.jpg"
+                alt="Desktop photo" class="target-img-block" width="360" />
+              </picture>
             </li>
             <li class="target-item">
-              <img
-                class="pfoto-img"
-                src="./images/img2.jpg"
-                alt="Mobile photo"
-                lass="target-img-block"
-                width="360"
-              />
+              <picture>
+                <source srcset="
+                ./images/desktop/Rectangle2.jpg 1x,
+                ./images/desktop/Rectangle2@2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="
+                ./images/desktop/Rectangle2.webp 1x,
+                ./images/desktop/Rectangle2@2x.webp 2x"
+                media="(min-width:1200px)" type="image/webp">
+                <img class="pfoto-img" src="./images/desktop/Rectangle2.jpg"
+                alt="Desktop photo" class="target-img-block" width="360" />
+              </picture>
             </li>
             <li class="target-item">
-              <img
-                class="photo-img"
-                src="./images/img3.jpg"
-                alt="Desktop and photo"
-                lass="target-img-block"
-                width="360"
-              />
+              <picture>
+                 <source srcset="
+                ./images/desktop/Rectangle3.jpg 1x,
+                ./images/desktop/Rectangle3@2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="
+                ./images/desktop/Rectangle3.webp 1x,
+                ./images/desktop/Rectangle3@2x.webp 2x"
+                media="(min-width:1200px)" type="image/webp">
+                <img class="pfoto-img" src="./images/desktop/Rectangle3.jpg"
+                alt="Desktop photo" class="target-img-block" width="360" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -262,8 +286,32 @@
           <ul class="team-list">
             <li class="team-items">
               <picture>
-                <source srcset="Mark Guerrero-mobile.jpg, Mark Guerrero-mobile@2x.jpg "type="image/jpeg">
-                <img src="./images/mobile/Mark Guerrero-mobile.jpg" alt="Product Designer photo" width="264" />
+                <source srcset="
+                ./images/desktop/MarkGuerrero-img.jpg 1x,
+                ./images/desktop/MarkGuerrero-img@2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="
+                ./images/desktop/MarkGuerrero-img.webp 1x,
+                ./images/desktop/MarkGuerrero-img@2x.webp 2x"
+                media="(min-width:1200px)" type="image/webp">
+                <source srcset="
+                ./images/tablet/MarkGuerrero-img.jpg 1x,
+                ./images/tablet/MarkGuerrero-img@2x.jpg 2x"
+                media="(min-width:768px)">
+                <source srcset="
+                ./images/tablet/MarkGuerrero-img.webp 1x,
+                ./images/tablet/MarkGuerrero-img@2x.webp 2x"
+                media="(min-width:768px)" type="image/webp">
+                <source srcset="
+                ./images/mobile/MarkGuerrero-mobile.jpg 1x,
+                ./images/mobile/MarkGuerrero-mobile@2x.jpg 2x"
+                media="(max-width:767px)">
+                <source srcset="
+                ./images/mobile/MarkGuerrero-mobile.webp 1x,
+                ./images/mobile/MarkGuerrero-mobile@2x.webp 2x"
+                media="(max-width:767px)" type="image/webp">
+                <img class="pfoto-img" 
+                src="./images/desktop/MarkGuerrero-img.jpg" alt="Product Designer photo" width="264" />
               </picture>
               <div class="title-div">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
@@ -302,8 +350,32 @@
             </li>
             <li class="team-items">
               <picture>
-                <source srcset="Tom Ford-mobile.jpg,Tom Ford-mobile@2x.jpg" type="image/jpeg">
-                <img src="./images/mobile/Tom Ford-mobile.jpg" alt="Frontend Developer photo" width="264" />
+                <source srcset="
+                ./images/desktop/TomFord-img.jpg 1x,
+                ./images/desktop/TomFord-img@2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="
+                ./images/desktop/TomFord-img.webp 1x,
+                ./images/desktop/TomFord-img@2x.webp 2x"
+                media="(min-width:1200px)" type="image/webp">
+                <source srcset="
+                ./images/tablet/TomFord-img.jpg 1x,
+                ./images/tablet/TomFord-img@2x.jpg 2x"
+                media="(min-width:768px)">
+                <source srcset="
+                ./images/tablet/TomFord-img.webp 1x,
+                ./images/tablet/TomFord-img@2x.webp 2x"
+                media="(min-width:768px)" type="image/webp">
+                <source srcset="
+                ./images/mobile/TomFord-mobile.jpg 1x,
+                ./images/mobile/TomFord-mobile@2x.jpg 2x"
+                media="(max-width:767px)">
+                <source srcset="
+                ./images/mobile/TomFord-mobile.webp 1x,
+                ./images/mobile/TomFord-mobile@2x.webp 2x"
+                media="(max-width:767px)" type="image/webp">
+                <img class="pfoto-img" 
+                src="./images/desktop/TomFord-img.jpg" alt="Product Designer photo" width="264" />
               </picture>
               <div class="title-div">
                 <h3 class="team-subtitle">Tom Ford</h3>
@@ -342,8 +414,32 @@
             </li>
             <li class="team-items">
               <picture>
-                <source srcset="Camila Garcia-mobile.jpg, Camila Garcia-mobile@2x.jpg" type="image/jpeg">
-                <img src="./images/mobile/Camila Garcia-mobile.jpg" alt="Marketing employee photo" width="264" />
+                <source srcset="
+                ./images/desktop/CamilaGarcia-img.jpg 1x,
+                ./images/desktop/CamilaGarcia-img@2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="
+                ./images/desktop/CamilaGarcia-img.webp 1x,
+                ./images/desktop/CamilaGarcia-img@2x.webp 2x"
+                media="(min-width:1200px)" type="image/webp">
+                <source srcset="
+                ./images/tablet/CamilaGarcia-img.jpg 1x,
+                ./images/tablet/CamilaGarcia-img@2x.jpg 2x"
+                media="(min-width:768px)">
+                <source srcset="
+                ./images/tablet/CamilaGarcia-img.webp 1x,
+                ./images/tablet/CamilaGarcia-img@2x.webp 2x"
+                media="(min-width:768px)" type="image/webp">
+                <source srcset="
+                ./images/mobile/CamilaGarcia-mobile.jpg 1x,
+                ./images/mobile/CamilaGarcia-mobile@2x.jpg 2x"
+                media="(max-width:767px)">
+                <source srcset="
+                ./images/mobile/CamilaGarcia-mobile.webp 1x,
+                ./images/mobile/CamilaGarcia-mobile@2x.webp 2x"
+                media="(max-width:767px)" type="image/webp">
+                <img class="pfoto-img" 
+                src="./images/desktop/CamilaGarcia-img.jpg" alt="Product Designer photo" width="264" />
               </picture>
               <div class="title-div">
                 <h3 class="team-subtitle"">Camila Garcia</h3>
@@ -382,8 +478,32 @@
             </li>
             <li class="team-items">
               <picture>
-                <source srcset="Daniel Wilson-mobile.jpg, Daniel Wilson-mobile@2x.jpg" type="image/jpeg">
-                <img src="./images/mobile/Daniel Wilson-mobile.jpg" alt="UI Designer photo" width="264">
+                <source srcset="
+                ./images/desktop/DanielWilson-img.jpg 1x,
+                ./images/desktop/DanielWilson-img@2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="
+                ./images/desktop/DanielWilson-img.webp 1x,
+                ./images/desktop/DanielWilson-img@2x.webp 2x"
+                media="(min-width:1200px)" type="image/webp">
+                <source srcset="
+                ./images/tablet/DanielWilson-img.jpg 1x,
+                ./images/tablet/DanielWilson-img@2x.jpg 2x"
+                media="(min-width:768px)">
+                <source srcset="
+                ./images/tablet/DanielWilson-img.webp 1x,
+                ./images/tablet/DanielWilson-img@2x.webp 2x"
+                media="(min-width:768px)" type="image/webp">
+                <source srcset="
+                ./images/mobile/DanielWilson-mobile.jpg 1x,
+                ./images/mobile/DanielWilson-mobile@2x.jpg 2x"
+                media="(max-width:767px)">
+                <source srcset="
+                ./images/mobile/DanielWilson-mobile.webp 1x,
+                ./images/mobile/DanielWilson-mobile@2x.webp 2x"
+                media="(max-width:767px)" type="image/webp">
+                <img class="pfoto-img" 
+                src="./images/desktop/DanielWilson-img.jpg" alt="Product Designer photo" width="264" />
               </picture>
               <div class="title-div">
                 <h3 class="team-subtitle"">Daniel Wilson</h3>
@@ -466,7 +586,7 @@
               <a href="" class="social-customers-link" target="_blank" rel="noopener no-referrer">
                 <svg class="social-icon" height="56" width="104">
                   <use href="./images/sprite.svg#icon-Logo-TAG-LINE"></use>
-                </svg> 
+                </svg>
               </a>
             </li>
           </ul>
@@ -475,7 +595,7 @@
     </main>
     <footer class="footer">
       <div class="container container-wrap">
-        <div class="footer-containers">
+       <div class="footer-containers">
           <div class="container-left">
             <a class="logo-footer" href="./index.html"><span class="begin-logo">Web</span>Studio</a>
             <p class="text-footer">
@@ -515,8 +635,8 @@
               </li>
             </ul>
           </div>
-        </div >
-          <form class="footer-subscribe">
+       </div>
+        <form class="footer-subscribe">
             <p class="footer-subscribe-title">Subscribe</p>
             <label class="footer-block">
                 <input class="footer-input" type="email" name="email" aria-label="email" placeholder="E-mail">
@@ -526,9 +646,10 @@
                 </svg>
               </button>
             </label>
-          </form>
+        </form>
+      </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div  class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close >
           <svg class="modal-svg"  width="8" height="8">
@@ -577,5 +698,7 @@
       </div> 
     </div>
     <script src="./js/modal.js"></script>
+    
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
