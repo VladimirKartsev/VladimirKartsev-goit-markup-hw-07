@@ -23,21 +23,20 @@
     padding-bottom: 40px;
     padding-left: 40px;
     background-color: var(--color_white);
-    box-shadow:box-shadow: 
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: translateX(-100%);
-    transition: transform var( --hover-transition), opacity var( --hover-transition),
-      visibility var(--hover-transition);
+    transition: transform var(--hover-transition),
+      opacity var(--hover-transition), visibility var(--hover-transition);
   }
 
   .mobile-menu {
     transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    transition: var(--hover-transition);
   }
   .mobile-menu.is-open {
     opacity: 1;
