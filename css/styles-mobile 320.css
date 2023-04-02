@@ -351,4 +351,10 @@
     background-color: var(--color_ocean_new);
     transition: color var(--hover-transition);
   }
+  .modal {
+    position: absolute;
+    width: 100vw;
+    min-width: 408px;
+    max-height: 586px;
+  }
 }
