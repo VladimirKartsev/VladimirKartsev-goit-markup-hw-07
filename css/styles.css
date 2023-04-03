@@ -102,8 +102,6 @@ ol {
 .header-div {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .menu {
   display: flex;
@@ -328,8 +326,7 @@ margin-bottom: 16px;
   }
   .social-div-group {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    gap: 56px;
     align-items: center;
     padding-top: 40px;
   }
@@ -480,7 +477,7 @@ hero {
 }
 .title-hero {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 56px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
@@ -594,7 +591,6 @@ hero {
 .target-img-block {
   display: block;
 } 
-*/
 
 /*---------------------------- Our team---------------------------- */
 

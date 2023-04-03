@@ -10,6 +10,7 @@
     display: block;
     border-bottom: none;
   }
+
   .logo {
     font-family: var(--font_secondary, "Arial", sans-serif);
     font-weight: 800;
