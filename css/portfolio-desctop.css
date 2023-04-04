@@ -62,7 +62,7 @@
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    gap: 48px 16px;
   }
 
   .portfolio-item {

@@ -76,6 +76,15 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
+  .address-link-phone {
+    font-size: 24px;
+  }
+  .social-div-list-mobile {
+    gap: 36px;
+  }
+  .social-div-group {
+    gap: 40;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
